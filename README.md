@@ -8,3 +8,6 @@ https://asciinema.org/a/toLHRv9yB58ZtP83dOOezPjIU
 
 ### Video of BRAIN-CALC
 https://asciinema.org/a/scCiepXySP50vriL9ccCuGMvd
+
+### Video of BRAIN-GCD
+https://asciinema.org/a/R49aHRN5oNhfC01E4GJBgC7wz
