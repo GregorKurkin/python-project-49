@@ -11,5 +11,4 @@ def game_calc():
     print(f'Question: {a} {used_operator} {b}')
     func_result = calc(a, used_operator, b)
     answer = int(prompt.string('Your answer: '))
-    print(func_result)
     return (answer, func_result)
