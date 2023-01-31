@@ -10,5 +10,5 @@ def game_calc():
     used_operator = choice(operators)
     print(f'Question: {a} {used_operator} {b}')
     func_result = calc(a, used_operator, b)
-    answer = int(prompt.string('Your answer: '))
+    answer = prompt.string('Your answer: ')
     return (answer, func_result)

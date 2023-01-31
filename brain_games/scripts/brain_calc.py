@@ -15,7 +15,7 @@ def main():  # brain_calc.py
     counter = 0
     while counter != 3:
         answer, func_result = game_calc()
-        if answer != func_result:
+        if answer != str(func_result):
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
                   f"'{func_result}'. \nLet's try again, {name}!")
             break
