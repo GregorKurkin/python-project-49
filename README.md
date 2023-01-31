@@ -5,3 +5,6 @@
 
 ### Video of BRAIN-EVEN
 https://asciinema.org/a/toLHRv9yB58ZtP83dOOezPjIU
+
+### Video of BRAIN-CALC
+https://asciinema.org/a/scCiepXySP50vriL9ccCuGMvd
