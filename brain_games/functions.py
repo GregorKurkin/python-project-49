@@ -52,6 +52,16 @@ def max_divisor_list(divisors_list):
                 pairs_max_divisor_list.append(pair_max_divisor)
     return pairs_max_divisor_list
 
+
+def progression_func(start=1, lenght=10, step=2):
+    progression = []
+    elem = start
+    for _ in range(lenght):
+        progression.append(str(elem))
+        elem += step
+    return progression
+
+
 # def is_correct(answer, func_result):
 #     test_result = (answer == 'yes' and func_result) or (
 #         answer == 'no' and not func_result)
