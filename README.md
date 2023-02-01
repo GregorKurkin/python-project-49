@@ -11,3 +11,6 @@ https://asciinema.org/a/scCiepXySP50vriL9ccCuGMvd
 
 ### Video of BRAIN-GCD
 https://asciinema.org/a/R49aHRN5oNhfC01E4GJBgC7wz
+
+### Video of BRAIN-PROGRESSION
+https://asciinema.org/a/fRFvOAlY5Q17bJ5zAHNmccbUZ
