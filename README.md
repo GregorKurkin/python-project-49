@@ -14,3 +14,6 @@ https://asciinema.org/a/R49aHRN5oNhfC01E4GJBgC7wz
 
 ### Video of BRAIN-PROGRESSION
 https://asciinema.org/a/fRFvOAlY5Q17bJ5zAHNmccbUZ
+
+### Video of BRAIN-PRIME
+https://asciinema.org/a/0vlFoeBvyGoc4rr3MJrtqbKlm
