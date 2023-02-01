@@ -62,7 +62,11 @@ def progression_func(start=1, lenght=10, step=2):
     return progression
 
 
-# def is_correct(answer, func_result):
-#     test_result = (answer == 'yes' and func_result) or (
-#         answer == 'no' and not func_result)
-#     return test_result
+def is_prime(number):
+    if number != 1:
+        for num in range(2, number // 2 + 1):
+            if number % num == 0:
+                return 'no'
+        return 'yes'
+    else:
+        return 'yes'
