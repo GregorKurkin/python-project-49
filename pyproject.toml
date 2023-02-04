@@ -6,9 +6,9 @@ authors = ["Gregory Kurkin <monstercondo@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/GregorKurkin/python-project-49.git"
 classifiers = [
-Topic :: Games/Entertainment :: Puzzle Games
-Operating System :: POSIX :: Linux
-License :: Freeware
+  Topic :: Games/Entertainment :: Puzzle Games
+  Operating System :: POSIX :: Linux
+  License :: Freeware
 Programming Language :: Python :: 3.8
 Natural Language :: English
 ]
