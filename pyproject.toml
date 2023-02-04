@@ -9,8 +9,8 @@ classifiers = [
   Topic :: Games/Entertainment :: Puzzle Games
   Operating System :: POSIX :: Linux
   License :: Freeware
-Programming Language :: Python :: 3.8
-Natural Language :: English
+  Programming Language :: Python :: 3.8
+  Natural Language :: English
 ]
 # packages = [{include = "hexlet_code"}]
 packages = [
