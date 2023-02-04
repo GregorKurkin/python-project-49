@@ -1,21 +1,19 @@
 [tool.poetry]
+classifiers = [
+  "Topic :: Games/Entertainment :: Puzzle Games",
+  "Operating System :: POSIX :: Linux",
+  "License :: Freeware",
+  "Programming Language :: Python :: 3.8",
+  "Natural Language :: English"
+]
 name = "hexlet-code"
 version = "0.1.0"
 description = "Package of five math games"
 authors = ["Gregory Kurkin <monstercondo@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/GregorKurkin/python-project-49.git"
-classifiers = [
-  Topic :: Games/Entertainment :: Puzzle Games
-  Operating System :: POSIX :: Linux
-  License :: Freeware
-  Programming Language :: Python :: 3.8
-  Natural Language :: English
-]
 # packages = [{include = "hexlet_code"}]
-packages = [
-  { include = "brain_games" },
-]
+packages = [{ include = "brain_games" }]
 
 
 [tool.poetry.dependencies]
