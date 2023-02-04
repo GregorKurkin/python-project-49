@@ -25,6 +25,9 @@ If you give wrong answer - you loose. After giving of three right answers, you w
 - **BRAIN-PRIME**
   Proposes to define if given number is prime
 
+### minimal requirements:
+  Python 3.8
+
 ## Installation:
 Use the package manager **pip** to install this package
 ```bash
