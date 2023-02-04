@@ -5,15 +5,16 @@
 
 ### Video of BRAIN-EVEN
 https://asciinema.org/a/toLHRv9yB58ZtP83dOOezPjIU
+<script id="asciicast-555568" src="https://asciinema.org/a/555568.js" async></script>
 
 ### Video of BRAIN-CALC
-https://asciinema.org/a/scCiepXySP50vriL9ccCuGMvd
+<script id="asciicast-555965" src="https://asciinema.org/a/555965.js" async></script>
 
 ### Video of BRAIN-GCD
-https://asciinema.org/a/R49aHRN5oNhfC01E4GJBgC7wz
+<script id="asciicast-556122" src="https://asciinema.org/a/556122.js" async></script>
 
 ### Video of BRAIN-PROGRESSION
-https://asciinema.org/a/fRFvOAlY5Q17bJ5zAHNmccbUZ
+<script id="asciicast-556355" src="https://asciinema.org/a/556355.js" async></script>
 
 ### Video of BRAIN-PRIME
-https://asciinema.org/a/0vlFoeBvyGoc4rr3MJrtqbKlm
+<script id="asciicast-556383" src="https://asciinema.org/a/556383.js" async></script>
