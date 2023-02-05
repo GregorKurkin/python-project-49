@@ -1,9 +1,22 @@
 import prompt
 from random import randint
-from brain_games.functions import progression_func
 
 
-def game_progression():
+def progression_func(start=1, lenght=10, step=2):
+    progression = []
+    elem = start
+    for _ in range(lenght):
+        progression.append(str(elem))
+        elem += step
+    return progression
+
+
+def game_task():
+    task = 'What number is missing in the progression?'
+    return task
+
+
+def game_logik():
     lenght = randint(5, 15)
     start = randint(1, 25)
     step = randint(2, 10)
@@ -11,7 +24,6 @@ def game_progression():
     progression = progression_func(start, lenght, step)
     hidden_elem = progression[hidden_index]
     progression[hidden_index] = '..'
-    print(f"Question: {' '.join(progression)}")
+    question = f"Question: {' '.join(progression)}"
     func_result = hidden_elem
-    answer = prompt.string('Your answer: ')
-    return (answer, func_result)
+    return (question, func_result)
