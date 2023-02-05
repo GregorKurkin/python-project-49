@@ -1,11 +1,20 @@
-import prompt
 from random import randint
-from brain_games.functions import if_even
 
 
-def game_even():
+def if_even(question_number):
+    if question_number % 2 == 0:
+        return 'yes'
+    else:
+        return 'no'
+
+
+def game_task():
+    task = 'Answer "yes" if the number is even, otherwise answer "no".'
+    return task
+
+
+def game_logik():
     question_number = randint(-1000, 1000)
-    print(f'Question: {question_number}')
-    answer = prompt.string('Your answer: ')
+    question = f'Question: {question_number}'
     func_result = if_even(question_number)
-    return (answer, func_result)
+    return (question, func_result)
