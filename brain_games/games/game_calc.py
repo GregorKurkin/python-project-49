@@ -15,8 +15,10 @@ def game_task():
 
 
 def game_logik():
-    a = randint(0, 10)
-    b = randint(0, 10)
+    MIN_NUMBER = 0
+    MAX_NUMBER = 15
+    a = randint(MIN_NUMBER, MAX_NUMBER)
+    b = randint(MIN_NUMBER, MAX_NUMBER)
     operators = '+-*'
     used_operator = choice(operators)
     question = f'{a} {used_operator} {b}'

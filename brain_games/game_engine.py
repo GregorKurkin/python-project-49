@@ -7,7 +7,8 @@ def game_engine(module):
     print(f'Hello, {name}!')
     print(module.game_task())
     counter = 0
-    while counter != 3:
+    NUMBER_OF_ROUNDS = 3
+    while counter != NUMBER_OF_ROUNDS:
         question, func_result = module.game_logik()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
@@ -18,5 +19,5 @@ def game_engine(module):
         else:
             print('Correct!')
             counter += 1
-    if counter == 3:
+    if counter == NUMBER_OF_ROUNDS:
         print(f'Congratulations, {name}!')
