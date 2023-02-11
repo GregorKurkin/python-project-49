@@ -9,7 +9,7 @@ def game_engine(module):
     counter = 0
     while counter != 3:
         question, func_result = module.game_logik()
-        print(question)
+        print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
         if answer != func_result:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "

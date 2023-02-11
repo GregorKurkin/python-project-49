@@ -14,7 +14,7 @@ def game_task():
 
 
 def game_logik():
-    question_number = randint(-1000, 1000)
-    question = f'Question: {question_number}'
-    func_result = if_even(question_number)
+    question = randint(-1000, 1000)
+    # question = f'Question: {question_number}'
+    func_result = if_even(question)
     return (question, func_result)

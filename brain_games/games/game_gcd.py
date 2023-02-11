@@ -49,6 +49,6 @@ def game_logik():
     divisors_list = num_divisor(numbers)  # список из (число, {делители})
     pair, divisor = choice(max_divisor_list(divisors_list))
     a, b = pair
-    question = f'Question: {a} {b}'
+    question = f'{a} {b}'
     func_result = str(divisor)
     return (question, func_result)

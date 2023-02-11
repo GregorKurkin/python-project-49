@@ -19,6 +19,6 @@ def game_logik():
     b = randint(0, 10)
     operators = '+-*'
     used_operator = choice(operators)
-    question = f'Question: {a} {used_operator} {b}'
+    question = f'{a} {used_operator} {b}'
     func_result = str(calc(a, used_operator, b))
     return (question, func_result)

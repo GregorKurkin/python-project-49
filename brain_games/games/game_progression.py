@@ -23,6 +23,6 @@ def game_logik():
     progression = progression_func(start, lenght, step)
     hidden_elem = progression[hidden_index]
     progression[hidden_index] = '..'
-    question = f"Question: {' '.join(progression)}"
+    question = ' '.join(progression)
     func_result = hidden_elem
     return (question, func_result)

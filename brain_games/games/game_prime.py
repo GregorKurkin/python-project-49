@@ -18,6 +18,6 @@ def game_task():
 
 def game_logik():
     number = randint(1, 100)
-    question = f"Question: {number}"
+    # question = f"Question: {number}"
     func_result = is_prime(number)
-    return (question, func_result)
+    return (number, func_result)
