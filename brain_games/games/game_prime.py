@@ -2,13 +2,13 @@ from random import randint
 
 
 def is_prime(number):
-    if number != 1:
+    if number <= 2:
+        return True
+    else:
         for num in range(2, number // 2 + 1):
             if number % num == 0:
-                return 'no'
-        return 'yes'
-    else:
-        return 'yes'
+                return False
+        return True
 
 
 def game_task():
@@ -18,6 +18,5 @@ def game_task():
 
 def game_logik():
     number = randint(1, 100)
-    # question = f"Question: {number}"
-    func_result = is_prime(number)
+    func_result = (is_prime(number) and 'yes' or 'no')
     return (number, func_result)
