@@ -1,12 +1,12 @@
 from random import randint
 
 
-def progression_func(start=1, lenght=10, step=2):
+def progression_func(initial_term=1, number_of_terms=10, common_difference=2):
     progression = []
-    elem = start
-    for _ in range(lenght):
+    elem = initial_term
+    for _ in range(number_of_terms):
         progression.append(str(elem))
-        elem += step
+        elem += common_difference
     return progression
 
 
@@ -16,11 +16,11 @@ def game_task():
 
 
 def game_logik():
-    lenght = randint(5, 15)
-    start = randint(1, 25)
-    step = randint(2, 10)
-    hidden_index = randint(0, lenght - 1)
-    progression = progression_func(start, lenght, step)
+    number_of_terms = randint(5, 15)
+    initial_term = randint(1, 25)
+    common_difference = randint(2, 10)
+    hidden_index = randint(0, number_of_terms - 1)
+    progression = progression_func(initial_term, number_of_terms, common_difference)
     hidden_elem = progression[hidden_index]
     progression[hidden_index] = '..'
     question = ' '.join(progression)
