@@ -1,42 +1,16 @@
-from random import choice
+from random import choice, randint
 
 
-def not_prime(num_range=100):
-    # 1. создает список составных чисел в диапазоне
-    not_prime_list_ = []
-    for i in range(4, num_range + 1):
-        for c in range(2, (i // 2 + 1)):
-            if i % c == 0:
-                not_prime_list_.append(i)
-                break
-    return not_prime_list_
-
-
-def num_divisor(numbers):
-    # принимает список составных чисел
-    # возвращает список кортежей (число, {делители})
-    list_num_divisors = []
-    for num in numbers:
-        divisors = {i for i in range(2, (num // 2 + 1)) if num % i == 0}
-        list_num_divisors.append((num, divisors))
-    return list_num_divisors
-
-
-def max_divisor_list(divisors_list):
-    # принимает список пар
-    # 3. находим пары чисел с общими делителями с помощью пересечения множеств.
-    #    создаем список элементов ((пара чисел), максимальный общий делитель)
-    pairs_max_divisor_list = []
-    for index_ in range(len(divisors_list) - 1):
-        for next_index in range(index_ + 1, len(divisors_list)):
-            common_set = (divisors_list[index_][1]
-                          & divisors_list[next_index][1])
-            if common_set:
-                pair_max_divisor = (
-                    (divisors_list[index_][0],
-                     divisors_list[next_index][0]), max(common_set))
-                pairs_max_divisor_list.append(pair_max_divisor)
-    return pairs_max_divisor_list
+def generate_numbers():
+    MIN_NUMBER = 1
+    MAX_NUMBER = 100
+    a = randint(MIN_NUMBER, MAX_NUMBER)
+    b = randint(MIN_NUMBER, MAX_NUMBER)
+    if a == b:
+        while a == b:
+            a = randint(MIN_NUMBER, MAX_NUMBER)
+            b = randint(MIN_NUMBER, MAX_NUMBER)
+    return a, b
 
 
 def game_task():
@@ -44,11 +18,21 @@ def game_task():
     return task
 
 
+def find_nod(a, b):
+    if b > a:
+        a, b = b, a
+    dividend = a
+    divisor = b
+    remainder = dividend % divisor
+    while remainder != 0:
+        dividend = divisor
+        divisor = remainder
+        remainder = dividend % divisor
+    return divisor
+
+
 def game_logik():
-    numbers = not_prime()  # список составных чисел
-    divisors_list = num_divisor(numbers)  # список из (число, {делители})
-    pair, divisor = choice(max_divisor_list(divisors_list))
-    a, b = pair
+    a, b = generate_numbers()
     question = f'{a} {b}'
-    func_result = str(divisor)
+    func_result = str(find_nod(a, b))
     return (question, func_result)
