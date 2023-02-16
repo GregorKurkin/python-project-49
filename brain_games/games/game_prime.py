@@ -1,6 +1,10 @@
 from random import randint
 
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
+
 def is_prime(number):
     if number <= 2:
         return True
@@ -16,9 +20,7 @@ def game_task():
     return task
 
 
-def game_logik():
-    MIN_NUMBER = 1
-    MAX_NUMBER = 100
+def game_quiz_and_answer():
     number = randint(MIN_NUMBER, MAX_NUMBER)
-    func_result = (is_prime(number) and 'yes' or 'no')
-    return (number, func_result)
+    right_answer = (is_prime(number) and 'yes' or 'no')
+    return (number, right_answer)

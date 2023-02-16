@@ -1,6 +1,14 @@
 from random import randint
 
 
+MIN_NUMBER = 5
+MAX_NUMBER = 15
+MIN_TERM = 1
+MAX_TERM = 25
+MIN_DIFFERENCE = 2
+MAX_DIFFERENCE = 10
+
+
 def progression_func(initial_term=1, number_of_terms=10, common_difference=2):
     progression = []
     elem = initial_term
@@ -15,13 +23,7 @@ def game_task():
     return task
 
 
-def game_logik():
-    MIN_NUMBER = 5
-    MAX_NUMBER = 15
-    MIN_TERM = 1
-    MAX_TERM = 25
-    MIN_DIFFERENCE = 2
-    MAX_DIFFERENCE = 10
+def game_quiz_and_answer():
     number_of_terms = randint(MIN_NUMBER, MAX_NUMBER)
     initial_term = randint(MIN_TERM, MAX_TERM)
     common_difference = randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
@@ -31,5 +33,5 @@ def game_logik():
     hidden_elem = progression[hidden_index]
     progression[hidden_index] = '..'
     question = ' '.join(progression)
-    func_result = hidden_elem
-    return (question, func_result)
+    right_answer = hidden_elem
+    return (question, right_answer)

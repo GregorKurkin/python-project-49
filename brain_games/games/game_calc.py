@@ -2,6 +2,10 @@ from random import randint, choice
 import operator
 
 
+MIN_NUMBER = 0
+MAX_NUMBER = 15
+
+
 def calc(a, used_operator, b):
     operators_dict = {'+': operator.add(a, b),
                       '-': operator.sub(a, b),
@@ -14,13 +18,11 @@ def game_task():
     return task
 
 
-def game_logik():
-    MIN_NUMBER = 0
-    MAX_NUMBER = 15
+def game_quiz_and_answer():
     a = randint(MIN_NUMBER, MAX_NUMBER)
     b = randint(MIN_NUMBER, MAX_NUMBER)
     operators = '+-*'
     used_operator = choice(operators)
     question = f'{a} {used_operator} {b}'
-    func_result = str(calc(a, used_operator, b))
-    return (question, func_result)
+    right_answer = str(calc(a, used_operator, b))
+    return (question, right_answer)

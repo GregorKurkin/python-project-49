@@ -1,6 +1,10 @@
 from random import randint
 
 
+MIN_NUMBER = 0
+MAX_NUMBER = 1000
+
+
 def is_even(question_number):
     return question_number % 2 == 0
 
@@ -10,9 +14,7 @@ def game_task():
     return task
 
 
-def game_logik():
-    MIN_NUMBER = 0
-    MAX_NUMBER = 1000
+def game_quiz_and_answer():
     question = randint(MIN_NUMBER, MAX_NUMBER)
-    func_result = (is_even(question) and 'yes' or 'no')
-    return (question, func_result)
+    right_answer = (is_even(question) and 'yes' or 'no')
+    return (question, right_answer)

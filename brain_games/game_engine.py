@@ -1,20 +1,22 @@
 import prompt
 
 
-def start(module):
+NUMBER_OF_ROUNDS = 3
+
+
+def execute(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(module.game_task())
+    print(game.game_task())
     counter = 0
-    NUMBER_OF_ROUNDS = 3
     while counter != NUMBER_OF_ROUNDS:
-        question, func_result = module.game_logik()
+        question, right_answer = game.game_quiz_and_answer()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
-        if answer != func_result:
+        if answer != right_answer:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
-                  f"'{func_result}'. \nLet's try again, {name}!")
+                  f"'{right_answer}'. \nLet's try again, {name}!")
             break
         else:
             print('Correct!')

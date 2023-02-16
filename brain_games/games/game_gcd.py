@@ -1,9 +1,11 @@
 from random import randint
 
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
+
 def generate_numbers():
-    MIN_NUMBER = 1
-    MAX_NUMBER = 100
     a = randint(MIN_NUMBER, MAX_NUMBER)
     b = randint(MIN_NUMBER, MAX_NUMBER)
     if a == b:
@@ -18,7 +20,7 @@ def game_task():
     return task
 
 
-def find_nod(a, b):
+def find_gcd(a, b):
     if b > a:
         a, b = b, a
     dividend = a
@@ -31,8 +33,8 @@ def find_nod(a, b):
     return divisor
 
 
-def game_logik():
+def game_quiz_and_answer():
     a, b = generate_numbers()
     question = f'{a} {b}'
-    func_result = str(find_nod(a, b))
-    return (question, func_result)
+    right_answer = str(find_gcd(a, b))
+    return (question, right_answer)
