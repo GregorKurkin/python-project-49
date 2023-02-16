@@ -9,11 +9,18 @@ MIN_DIFFERENCE = 2
 MAX_DIFFERENCE = 10
 
 
+def list_to_string(list_):
+    list_of_strings = list(map(str, list_))
+    # list_of_strings = [str(i) for i in list_]
+    return ' '.join(list_of_strings)
+
+
 def progression_func(initial_term=1, number_of_terms=10, common_difference=2):
     progression = []
     elem = initial_term
     for _ in range(number_of_terms):
-        progression.append(str(elem))
+        # progression.append(str(elem))
+        progression.append(elem)
         elem += common_difference
     return progression
 
@@ -32,6 +39,6 @@ def game_quiz_and_answer():
         initial_term, number_of_terms, common_difference)
     hidden_elem = progression[hidden_index]
     progression[hidden_index] = '..'
-    question = ' '.join(progression)
-    right_answer = hidden_elem
-    return (question, right_answer)
+    question = list_to_string(progression)
+    right_answer = str(hidden_elem)
+    return question, right_answer
