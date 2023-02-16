@@ -17,4 +17,4 @@ def game_task():
 def game_quiz_and_answer():
     question = randint(MIN_NUMBER, MAX_NUMBER)
     right_answer = (is_even(question) and 'yes' or 'no')
-    return (question, right_answer)
+    return question, right_answer

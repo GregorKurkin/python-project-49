@@ -37,4 +37,4 @@ def game_quiz_and_answer():
     a, b = generate_numbers()
     question = f'{a} {b}'
     right_answer = str(find_gcd(a, b))
-    return (question, right_answer)
+    return question, right_answer

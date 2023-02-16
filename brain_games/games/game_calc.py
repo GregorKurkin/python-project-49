@@ -25,4 +25,4 @@ def game_quiz_and_answer():
     used_operator = choice(operators)
     question = f'{a} {used_operator} {b}'
     right_answer = str(calc(a, used_operator, b))
-    return (question, right_answer)
+    return question, right_answer

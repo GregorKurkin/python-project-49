@@ -23,4 +23,4 @@ def game_task():
 def game_quiz_and_answer():
     number = randint(MIN_NUMBER, MAX_NUMBER)
     right_answer = (is_prime(number) and 'yes' or 'no')
-    return (number, right_answer)
+    return number, right_answer
